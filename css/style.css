@@ -436,6 +436,11 @@ p {
   max-width: 100%;
   border-radius: 15px;
 }
+@media (max-width: 767px) {
+  .popup-box {
+    width: 100%;
+  }
+}
 /* End JS */
 .class-another-syntax {
   background-color: var(--section-background);
