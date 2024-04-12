@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Oriented Programming</title>
+    <!-- Render All Element -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Main css Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="over-lay"></div>
+      <div class="container">
+        <header>
+          <div class="header-text">
+            <h3><a href="#">Object Oriented Programming</a></h3>
+          </div>
+          <ul class="all-links">
+            <li class="active">
+              <a href="#">All Links</a>
+              <div class="mega-menu">
+                <div class="image">
+                  <img
+                    src="image/WhatsApp Image 2024-03-07 at 17.55.21_c1218ce8.jpg"
+                    alt=""
+                  />
+                </div>
+                <ul class="links">
+                  <li>
+                    <a href="#class"
+                      ><i class="far fa-comments fa-fw"></i> Class</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#constructor"
+                      ><i class="far fa-user fa-fw"></i> constructor</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#destructor"
+                      ><i class="far fa-building fa-fw"></i> Destructor</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#over-loading"
+                      ><i class="far fa-check-circle fa-fw"></i> Over Loading
+                      Method</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#default-copy-constructor"
+                      ><i class="far fa-clipboard fa-fw"></i> Default Copy
+                      Constructor</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#object-as-argument">
+                      <i class="fa-solid fa-exclamation error"></i> Object As
+                      Argument
+                    </a>
+                  </li>
+                </ul>
+                <ul class="links">
+                  <li>
+                    <a href="#static"
+                      ><i class="far fa-comments fa-fw"></i> static</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#operator-over-loading"
+                      ><i class="far fa-user fa-fw"></i> Operator Over
+                      Loading</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#inheritance"
+                      ><i class="far fa-building fa-fw"></i> Inheritance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#encapsulation"
+                      ><i class="far fa-check-circle fa-fw"></i>
+                      Encapsulation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#abstraction"
+                      ><i class="far fa-clipboard fa-fw"></i> Abstraction</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#polymorphism"
+                      ><i class="far fa-clipboard fa-fw"></i> Polymorphism</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </header>
+      </div>
+      <main>
+        <div class="main-title">
+          <h3 id="writer">Object <span>Oriented</span> Programming</h3>
+          <p>
+            OOP stands for Object-Oriented Programming. It is a programming
+            style that views a program as a collection of objects, where each
+            object is an instance of a class. These classes are based on
+            concepts such as Inheritance, Composition, and Polymorphism,
+            allowing programmers to effectively organize and structure code and
+            provide a more organized structure.
+          </p>
+        </div>
+      </main>
+    </div>
+    <!-- End Landing -->
+    <!-- ٍStart Class -->
+    <div class="class" id="class">
+      <div class="dots dots-up"></div>
+      <div class="dots dots-down"></div>
+      <div class="container">
+        <div class="title">
+          <h3>Class</h3>
+          <p>Dont't Be Busy, be Productive</p>
+        </div>
+        <div class="class-content">
+          <div class="box">
+            <div class="box-content">
+              <h3>Class:</h3>
+              <p>
+                اطارا هيكليا لتنظيم الكود وترتيبه وتقدم مميزات مثل التجريد
+                والتوريث توفر الفئات والتقسيم لتسهيل ادارته وجعله اكتر قابليه
+                للصيانة واعاده الاستخدام
+              </p>
+            </div>
+            <div class="box-content">
+              <h3>جوه الكلاس انت بتحدد انواع بيانات زى ال</h3>
+              <h3>ِAccess Modifier:</h3>
+              <!-- =================================== -->
+              <div class="access-content">
+                <h4>Public:</h4>
+                <p>
+                  بتخلى اى صفه او داله متاحه للجميع سواء داخل الكلاس نفسه او
+                  كائن منه
+                </p>
+              </div>
+              <!-- =================================== -->
+              <div class="access-content">
+                <h4>Private:</h4>
+                <p>
+                  بتخلى اى صفه او داله محدش يقدر يعدل عليها غير من جوه الكلاس
+                  نفسه
+                </p>
+              </div>
+              <!-- ==================================== -->
+              <div class="access-content">
+                <h4>Protected:</h4>
+                <p>
+                  بتخلى الى يقدر يوصل للصفات او الدوال للكائن الى ورث من الكلاس
+                </p>
+              </div>
+              <!-- ==================================== -->
+              <h3>الكلاس نفسه بيتكون من حاجتين</h3>
+              <!-- ==================================== -->
+              <div class="access-content">
+                <h4>Property:</h4>
+                <p>
+                  تمثل بيانات او متغيرا تم تعرفها داخل الكلاس تستخدم لتخزين
+                  معلومه او تعريف متغير
+                </p>
+              </div>
+              <!-- ==================================== -->
+              <div class="access-content">
+                <h4>Method:</h4>
+                <p>هى داله تمثل سلوك معين للكائن</p>
+              </div>
+              <!-- ==================================== -->
+            </div>
+          </div>
+          <div class="image">
+            <p>Class Syntax</p>
+            <img src="image/Class-Syntax.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================================== -->
+    <div class="class-another-syntax">
+      <div class="title special-h3">
+        <h3 class="special-h3">Class Another Syntax</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="container">
+        <div class="another-content">
+          <h3>At user.h</h3>
+          <img src="image/Syntax-file-2.png" alt="" />
+        </div>
+        <!-- ---------------------------------------------- -->
+        <div class="another-content">
+          <h3>At user.cpp</h3>
+          <img src="image/Syntax-file-3.png" alt="" />
+        </div>
+        <!-- ---------------------------------------------- -->
+        <div class="another-content">
+          <h3>At main.cpp</h3>
+          <img src="image/Syntax-file-1.png" alt="" />
+        </div>
+        <!-- ---------------------------------------------- -->
+        <div class="text">
+          <h3>#pragma once at user.h</h3>
+          <p>بيمنع تضمين الملف اكتر من مره</p>
+          <p>
+            ودا مفيد لمنع تضارب الاسماء وذياده سرعه الترجمه ومنع اعاده تعريف
+            الدوال والمتغيرات
+          </p>
+          <p>include guards ودا بديل لحاجه اسمها</p>
+          <p>
+            من الاخر مش هيخليك تعمل 2 كلاس بنفس الاسم علشان الكود ميحصلوش 2 رن
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ٍEnd Class -->
+    <!-- Start Constructor -->
+    <div class="constructor" id="constructor">
+      <!-- <div class="container"> -->
+      <div class="title">
+        <h3>Constructor</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <!-- ========================== -->
+      <div class="constructor-text">
+        <h3>Constructor:</h3>
+        <p>
+          هو عباره عن داله لها نوع خاص يتم استدعائها اثناء انشاء كائن لتوليد قيم
+          اوليه للخصائص الموجوده فيه <br />
+          يعنى اول ما تعمل اى كائن لازم تملى الخصائص الى متحدده الاول
+        </p>
+        <p>ليها نفس اسم الكلاس Constructor ال</p>
+        <p>Return Type هى داله بس ملهاش اى</p>
+        <p>Constructor ممكن تعمل اكتر من</p>
+      </div>
+      <!-- ========================== -->
+      <div class="constructor-content">
+        <div class="box">
+          <div class="image">
+            <h3>At user.h</h3>
+            <img src="image/Constructor-At-.h.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At user.cpp</h3>
+            <img src="image/Constructor-At-.cpp.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At main.cpp</h3>
+            <img src="image/Constructor-At-.main.png" alt="" />
+          </div>
+        </div>
+        <h3 class="constructor-h3">:طب بقى لو انا عايز اكتب انا القيم</h3>
+        <div class="box">
+          <div class="image">
+            <h3>At user.h</h3>
+            <img src="image/Construt.h.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At user.cpp</h3>
+            <img src="image/Construt.cpp.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At main.cpp</h3>
+            <img src="image/Construt.main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Constructor -->
+    <!-- Start Destructor -->
+    <div class="destructor" id="destructor">
+      <div class="title">
+        <h3>Destructor</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="container">
+        <div class="destructor-text">
+          <h3>Destructor:</h3>
+          <p>هو داله من نوع خاص يتم استدعائها بعد ما تعمل الكائن</p>
+          <p>( ~ ) ليها نفس اسم الكلاس بس قبلها Destructor ال</p>
+          <p>Return Type هى داله بس ملهاش اى</p>
+          <p>فى نفس الكلاس Destructor مينفعش تعمل اكتر من</p>
+        </div>
+        <div class="destructor-content">
+          <div class="image">
+            <h3>At user.h</h3>
+            <img src="image/destructor.h.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At user.cpp</h3>
+            <img src="image/destructor.cpp.png" alt="" />
+          </div>
+          <div class="image">
+            <h3>At main.cpp</h3>
+            <img src="image/destructor.main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Destructor -->
+    <!-- Start Over Loading Method -->
+    <div class="over-loading" id="over-loading">
+      <div class="dots dots-up"></div>
+      <div class="dots dots-down"></div>
+      <div class="container">
+        <div class="title">
+          <h3>Over Loading Method</h3>
+          <p>Dont't Be Busy, be Productive</p>
+        </div>
+        <div class="over-loading-content">
+          <div class="over-loading-text">
+            <h3>Over Loading Method:</h3>
+            <p>بمعنى انك تعرف تعمل اكتر من داله بنفس الاسم</p>
+            <h3>هيفرق بينهم ازاى؟ Text Editor طب ال</h3>
+            <p>Number Of Parameter</p>
+            <p>Type Of Parameter</p>
+            <p>Order Of Parameter</p>
+            <p>فى الصوره هنا اى داله هتشتغل مش اخر واحده بس</p>
+          </div>
+          <div class="image">
+            <img src="image/over-loading.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Over Loading Method -->
+    <!-- Start Default Copy Constructor -->
+    <div class="default-copy-constructor" id="default-copy-constructor">
+      <div class="title">
+        <h3>Default Copy Constructor</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="container">
+        <div class="default-constructor-content">
+          <h3>Default Constructor Content:</h3>
+          <p>هى طريقه تقدر تعمل بيها كائن عن طريق كائن تانى معمول قبل كدا</p>
+          <p>( user_1 ) فى الصوره هنا انت عملت كائن جديد ليه نفس خصائص</p>
+        </div>
+        <div class="image">
+          <img src="image/default.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Default Copy Constructor -->
+    <!-- Start Object As Argument -->
+    <div class="object-as-argument" id="object-as-argument">
+      <div class="title">
+        <h3>Object As Argument</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="container">
+        <div class="images">
+          <h3>At Rectangle.h</h3>
+          <img src="image/rectangle.h.png" alt="" />
+        </div>
+        <div class="images">
+          <h3>At Rectangle.cpp</h3>
+          <img src="image/rectangle.cpp.png" alt="" />
+        </div>
+        <div class="images">
+          <h3>At main.cpp</h3>
+          <img src="image/rectangle.main.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Object As Argument -->
+    <!-- Start Static -->
+    <div class="static" id="static">
+      <div class="title">
+        <h3>Static</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="text">
+        <h3>Static Attribute And Method:</h3>
+        <p>Class هى حاجه خاصه بل Static ال</p>
+        <p>مش هيقدر يخش عليها Object ال</p>
+        <p>هيتعمل هياخد نفس القيمه Object اى</p>
+        <p>موجوده طول ما الكلاس موجود Static ال</p>
+      </div>
+      <div class="container">
+        <div class="box-images">
+          <h3>At Main.cpp</h3>
+          <img src="image/static.main.png" alt="" />
+        </div>
+        <div class="box-images">
+          <h3>At user.cpp</h3>
+          <img src="image/static.cpp.png" alt="" />
+        </div>
+        <div class="box-images">
+          <h3>At user.h</h3>
+          <img src="image/static.h.png" alt="" />
+        </div>
+      </div>
+      <div class="static-method">
+        <div class="text">
+          <h3>Static Method:</h3>
+          <p>
+            الداله العاديه عشان تعرف تستخدمها لازم تعمل كائن وعن طريق الكائن
+            بتستدعى الداله دى
+          </p>
+          <p>بس هنا انت بتقدر تنادى على الداله عن طريق اسم الكلاس</p>
+        </div>
+        <div class="container">
+          <div class="images">
+            <h3>At Math.h</h3>
+            <img src="image/static-2.h.png" alt="" />
+          </div>
+          <div class="images">
+            <h3>At Math.cpp</h3>
+            <img src="image/static-2.cpp.png" alt="" />
+          </div>
+          <div class="images">
+            <h3>At main.cpp</h3>
+            <img src="image/static-2.main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Static -->
+    <!-- Start Operator Over Loading -->
+    <div class="operator-over-loading" id="operator-over-loading">
+      <div class="title">
+        <h3>Operator Over Loading</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="dots dots-up" style="top: 300px"></div>
+      <div class="dots dots-down"></div>
+      <div class="text">
+        <h3>Operator Over Loading:</h3>
+        <p>x = 5, y = 10 لو انا عندى مثلا ان ال</p>
+        <p>Summation هتفهم ان دى c++ هنا ال x + y طب</p>
+        <p>x = "Hello", y = "World" ولو حبيت برضو اجمع</p>
+        <p>Concatenate هتفهم ان دا c++ ال x + y = "Hello World"</p>
+        <p>Error هيحصل Object بس انا ان عملت كدا على</p>
+        <p>
+          فنا لازم اعرف عمليه الجمع دى جوه الكلاس بتاعى او اى عمليه انا ممكن
+          احتاجها
+        </p>
+      </div>
+      <div class="text-operator">
+        <h3>To Define ++ Operator</h3>
+      </div>
+      <div class="container">
+        <div class="operator-box">
+          <h3>At point.h</h3>
+          <img src="image/operator++.h.png" alt="" />
+        </div>
+        <div class="operator-box">
+          <h3>At point.cpp</h3>
+          <img src="image/operator++.cpp.png" alt="" />
+        </div>
+        <div class="operator-box">
+          <h3>At main.cpp</h3>
+          <img src="image/operator++.main.png" alt="" />
+        </div>
+      </div>
+      <div class="dots" style="right: 0; transform: translateY(-320px)"></div>
+      <div class="dots"></div>
+      <div class="text-operator">
+        <h3>To Define + Operator</h3>
+      </div>
+      <div class="container">
+        <div class="operator-box">
+          <h3>At point.h</h3>
+          <img src="image/operator+.h.png" alt="" />
+        </div>
+        <div class="operator-box">
+          <h3>At point.cpp</h3>
+          <img src="image/operator+.cpp.png" alt="" />
+        </div>
+        <div class="operator-box">
+          <h3>At main.cpp</h3>
+          <img src="image/operator+.main.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Operator Over Loading -->
+    <!-- Start Inheritance -->
+    <div class="inheritance" id="inheritance">
+      <div class="title">
+        <h3>Inheritance</h3>
+        <p>Dont't Be Busy, be Productive</p>
+      </div>
+      <div class="text">
+        <h3>Inheritance:</h3>
+        <p>Base Class الكلاس الاساسى هيبقى اسمه ال</p>
+        <p>Derived Class والكلاس المشتق اسمه ال</p>
+        <p>
+          التوريث بقى هى ميزه فى ان انا اخد كل الصفات والدوال الى فى كلاس لكلاس
+          تانى
+        </p>
+        <p>وابدا انا ازود اى صفه او داله انا محتاجها للكلاس الجديد</p>
+        <p>اورث لكلاس تانى عادى Derived class وممكن من ال</p>
+        <p>الاولانى Derived مع ال Base وهياخد الى فى ال</p>
+      </div>
+    </div>
+    <!-- End Inheritance -->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
